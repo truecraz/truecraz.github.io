@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Claudia's Portfolio</title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h4>CLAUDIA ZINGONE</h4>
+        </div>
+        <ul class="nav-links" >
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="project.html">PROJECTS</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="resume.html">RESUME</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+
+    
+
+
+<br><br>
+
+
+
+<div class="row">
+  <div class="column">
+
+    <a target="_blank" href="Lia.jpg">
+    <img src="Lia.jpg"></a>
+
+    <a target="_blank" href="google.gif">
+      <img src="google.gif"></a>
+
+      <a target="_blank" href="red.jpg">
+        <img src="red.jpg"></a>
+
+        <a target="_blank" href="holder.png">
+          <img src="holder.png"></a>
+   
+  </div>
+  <div class="column">
+    
+    <a target="_blank" href="modelblueprint.jpg">
+      <img src="modelblueprint.jpg"></a>
+
+      <a target="_blank" href="money.jpg">
+        <img src="money.jpg"></a>
+
+        <a target="_blank" href="nestea.jpg">
+          <img src="nestea.jpg"></a>
+
+          <a target="_blank" href="compare1.png">
+            <img src="compare1.png"></a>
+
+   
+      
+  </div>
+  <div class="column">
+
+    <a target="_blank" href="donut3.png">
+      <img src="donut3.png"></a>
+   
+    <a target="_blank" href="camera.png">
+      <img src="camera.png"></a>
+    
+
+        <a target="_blank" href="ar.png">
+          <img src="ar.png"></a>
+
+          <a target="_blank" href="world.png">
+            <img src="world.png"></a>
+
+            <a target="_blank" href="compare2.png">
+              <img src="compare2.png"></a>
+
+
+          
+
+
+  
+  </div>
+  <div class="column">
+    
+    
+
+      <a target="_blank" href="kenil.jpg">
+        <img src="kenil.jpg"></a>
+
+        <a target="_blank" href="pink.jpg">
+          <img src="pink.jpg"></a>
+
+          <a target="_blank" href="23.jpg">
+            <img src="23.jpg"></a>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<footer class="footer-distributed">
+ 
+    <div class="footer-left">
+  
+        
+
+        <p class="footer-links">
+                <a href="index.html">HOME</a>
+                <a href="project.html">PROJECTS</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="resume.html">RESUME</a>
+                <a href="contact.html">CONTACT</a>
+        </p>
+
+        <p class="footer-company-name">© 2019 Claudia Zingone</p>
+    </div>
+
+    <div class="footer-center">
+       
+
+        <div>
+           
+        </div>
+        <div>
+            <!-- <i class="fa fa-envelope"></i> -->
+            <p><a href=""><zingonec@sheridancollege class="ca"></zingonec@sheridancollege></a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        
+        <div class="footer-icons">
+            
+            <a href="https://www.instagram.com/truecrazart/?hl=en"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/claudia-zingone-82b677135?originalSubdomain=ca"><i class="fa fa-linkedin"></i></a>
+           
+        </div>
+    </div>
+</footer>  
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script>
+const navSlide=()=>{
+const burger=document.querySelector('.burger');
+const nav=document.querySelector('.nav-links');
+const navLinks=document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click',() => {
+//toggle nav
+nav.classList.toggle('nav-active');
+
+
+    //animate links
+navLinks.forEach((link, index)=>{
+if(link.style.animation){
+link.style.animation=''
+}else{
+link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+}
+
+});
+
+//burger animation
+burger.classList.toggle('toggle');
+
+});
+
+}
+
+navSlide();
+
+$(window).on("load",function() {
+$(window).scroll(function() {
+var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+$(".fade").each(function() {
+/* Check the location of each desired element */
+var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+/* If the element is completely within bounds of the window, fade it in */
+if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+} else { //object goes out of view (scrolling up)
+if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+}
+});
+}).scroll(); //invoke scroll-handler on page-load
+});
+
+// gallery start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>
