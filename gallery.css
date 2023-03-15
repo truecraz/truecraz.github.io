@@ -305,7 +305,7 @@ footer{
   
   
   .footer-distributed{
-  background-color:#4E4945;
+  background-color:#272727;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -335,7 +335,7 @@ footer{
   /* Footer links */
   
   .footer-distributed .footer-links{
-  color:  #B1CED2;
+  color:  #f3f3f3;
   margin: 20px 0 12px;
   }
   
@@ -349,7 +349,7 @@ footer{
   }
   
   .footer-distributed .footer-company-name{
-  color:  #8f9296;
+  color: #272727 ;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -393,7 +393,7 @@ footer{
   width: 35px;
   height: 35px;
   cursor: pointer;
-  background-color:  #B1CED2;
+  background-color:  #d2d2d2;
   border-radius: 2px;
   
   font-size: 20px;
